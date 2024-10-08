@@ -1,0 +1,9 @@
+.cfg
+.config/discord
+.config/Electron
+.config/google-chrome
+.config/go
+.config/gtk-3.0
+.config/mimeapps.list
+.config/yay
+.config/tmux/plugins
