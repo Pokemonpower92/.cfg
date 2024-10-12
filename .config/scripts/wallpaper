@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+feh --bg-scale ~/images/walls/planet.webp
+

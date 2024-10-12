@@ -28,14 +28,14 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
 
 # Waifu activate.
-exec --no-startup-id exec bash $HOME/.fehbg
+exec --no-startup-id exec sh $HOME/.config/scripts/wallpaper.sh
 
 # Transparency
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf --daemon
@@ -196,7 +196,7 @@ default_border pixel 2
 
 ## Colors
 # class                 border  backgr. text    indicator child_border
-client.focused          #333333 #ca9ee6 #ffffff #ffffff   #cdd6f4
+client.focused          #b8bb26 #ca9ee6 #ffffff #b8bb26   #cdd6f4
 client.focused_inactive #cdd6f4 #f4b8e4 #ffffff #484e50   #5f676a
 client.unfocused        #cdd6f4 #f4b8e4 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
